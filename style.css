@@ -1,6 +1,7 @@
-/* 1. Design the body */
+/* Texte de la page */
+
 body {
-    background-color: #f0f8ff; /* Couleur de fond douce */
+    background-color: #f0f0f0; /* Couleur de fond douce */
     font-family: "Noto Sans", sans-serif; /* Police originale de Google Fonts */
     color: #333; /* Couleur du texte */
     font-size: 16px; /* Taille de police par défaut */
@@ -9,12 +10,12 @@ body {
     padding: 20px; /* Ajoute un espacement autour du contenu */
 }
 
-/* 2. Design headers h1, h2, h3 */
 h1, h2, h3 {
     font-family: "Times", Times New Roman, serif; /* Police élégante pour les titres */
     color: #8B0000; /* Couleur des titres */
     line-height: 1.2; /* Hauteur de ligne des titres */
     letter-spacing: 1px; /* Espacement des lettres */
+	margin: 10px 0; /* Ajoute un espacement vertical aux titres */
 }
 
 h1 {
@@ -23,13 +24,52 @@ h1 {
 
 h2 {
     font-size: 2em; /* Taille du h2 */
+	color: #333; /* Darker color for headings */
 }
 
 h3 {
     font-size: 1.5em; /* Taille du h3 */
 }
 
-/* 3. Design links a */
+p {
+    margin-bottom: 20px; /* Add space below paragraphs */
+}
+
+/* Container */
+
+.container {
+    width: 700px; /* Set the width of your container */
+    margin: 40px auto; /* Center the container */
+}
+
+/* Card */
+
+.card-white {
+    background-color: white; /* White background for cards */
+    border: 1px solid #e0e0e0; /* Light gray border */
+	border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; 
+    margin-bottom: 20px; /* Space between cards */
+}
+.card-white:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transition: box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+.card-white:nth-child(odd) {
+    background-color: #fafafa; /* Light gray for odd cards */
+}
+
+/* Round picture */
+
+.img-circle {
+    border-radius: 50%; /* Makes the image round */
+    width: 30%;
+}
+
+/* Link  */
+
 a {
     color: #E94E77; /* Couleur des liens */
     text-decoration: none; /* Pas de soulignement */
@@ -41,64 +81,13 @@ a:hover {
     text-decoration: underline; /* Soulignement lors du survol */
 }
 
-/* Professional tips */
-h1, h2, h3 {
-    margin: 10px 0; /* Ajoute un espacement vertical aux titres */
+/* Button  */
+
+.button-container {
+    margin-bottom: 20px; /* Add space below button */
 }
 
-/* General Reset */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light gray background for contrast */
-}
 
-/* Container styles */
-.container {
-    width: 700px; /* Set the width of your container */
-    margin: 40px auto; /* Center the container */
-}
-
-/* Card styles */
-.card-white {
-    background-color: white; /* White background for cards */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 20px; /* Inner spacing */
-    margin-bottom: 20px; /* Space between cards */
-}
-
-/* Hover effect for cards */
-.card-white:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-    transition: box-shadow 0.3s ease; /* Smooth transition effect */
-}
-
-/* Borders */
-.card-white {
-    border: 1px solid #e0e0e0; /* Light gray border */
-}
-
-.card-white:nth-child(odd) {
-    background-color: #fafafa; /* Light gray for odd cards */
-}
-
-/* Pading and margin */
-.card-white {
-    padding: 30px; /* More space inside the card */
-}
-
-h2 {
-    color: #333; /* Darker color for headings */
-}
-
-/* Make the profile picture round */
-.img-circle {
-    border-radius: 50%; /* Makes the image round */
-    width: 30%;
-}
-
-/* Style the link to look like a button */
 .btn {
     display: inline-block; /* Makes it behave like a button */
     padding: 10px 20px; /* Add some padding */
@@ -114,7 +103,9 @@ h2 {
     background-color: #0056b3; /* Darker shade on hover */
 }
 
-/* Style the list of social networks in the footer */
+
+/* List of social media in the footer  */
+
 .list-inline {
     list-style: none; /* Remove bullet points */
     padding-left: 0; /* Remove default padding */
@@ -125,14 +116,7 @@ h2 {
     padding: 0 20px; /* Add horizontal padding */
 }
 
-/* Adjust spacing for paragraphs and buttons */
-p {
-    margin-bottom: 20px; /* Add space below paragraphs */
-}
-
-.button-container {
-    margin-bottom: 20px; /* Add space below button */
-}
+/* Responsive design  */
 
 @media (max-width: 960px) {
   .container {
