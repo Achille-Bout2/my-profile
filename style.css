@@ -95,8 +95,7 @@ h2 {
 /* Make the profile picture round */
 .img-circle {
     border-radius: 50%; /* Makes the image round */
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
+    width: 30%;
 }
 
 /* Style the link to look like a button */
